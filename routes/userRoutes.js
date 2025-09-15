@@ -14,8 +14,8 @@ router.route("/sign-up").post(signup);
 router.route("/logout").get(verifyToken, logout);
 
 // CURD user route
-router.route("/getUser").get(getUser);
-router.route("/updateUser").put(updateUser);
-router.route("/deleteUser").delete(deleteUser);
+router.route("/getUser").get(verifyToken, getUser);
+router.route("/updateUser").put(verifyToken, updateUser);
+router.route("/deleteUser").delete(verifyToken, deleteUser);
 
 export default router;
