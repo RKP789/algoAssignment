@@ -13,7 +13,7 @@ connectDb();
 
 // Middleware to parse JSON
 app.use(express.json());
-app.use(express.urlencoded({extended:true}));
+// app.use(express.urlencoded({extended:true}));
 
 // app.use(cors({ origin: true, credentials: true }));
 
