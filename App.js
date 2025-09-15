@@ -25,6 +25,6 @@ app.use("/user", router);
 
 // server is listning
 app.listen(process.env.PORT, () => {
-    console.log("server is running");
+    console.log("server is running on some ...");
 })
 
